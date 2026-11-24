@@ -1,0 +1,272 @@
+/* ========== GLOBAL RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+}
+
+/* ========== HEADER ========== */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #043634;
+  color: white;
+  padding: 20px;
+}
+
+header h2 {
+  text-align: center;
+}
+
+header nav {
+  margin: 10px 0;
+}
+
+header nav a {
+  color: white;
+  margin-right: 30px;
+  font-weight: 500;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+/* ========== BUTTONS ========== */
+header .sign-in-up button {
+  background-color: #0a94afcf;
+  font-size: 16px;
+  font-weight: 550;
+  padding: 6px 14px;
+  border: 2px solid #0b0b0bd8;
+  border-radius: 5px;
+  outline: none;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+header .sign-in-up button:last-child {
+  background-color: #f21c08a9;
+}
+
+/* ========== POPUP BACKGROUND ========== */
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* ========== POPUP BOX ========== */
+.popup {
+  background-color: #f0f0f0;
+  width: 350px;
+  border-radius: 6px;
+  padding: 20px 25px 30px;
+}
+
+/* ========== POPUP HEADER ========== */
+.popup h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  color: #0b1a29;
+}
+
+.popup h2 button {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #24211e;
+}
+
+/* ========== INPUT FIELDS ========== */
+.popup input {
+  width: 100%;
+  margin-bottom: 20px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #020e1b;
+  padding: 6px 0;
+  font-weight: 500;
+  font-size: 14px;
+  outline: none;
+}
+
+/* ========== BUTTONS INSIDE POPUP ========== */
+.popup button.login-btn,
+.popup.register button.register-btn {
+  font-weight: 550;
+  font-size: 15px; /* FIXED TYPO */
+  color: white;
+  background-color: #0a1c2d;
+  padding: 6px 12px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* ========== REGISTER POPUP STYLES ========== */
+.popup.register {
+  background-color: #edeef7;
+}
+
+.popup.register h2 {
+  color: #fa9579;
+}
+
+.popup.register input {
+  border-bottom-color: #fa9579;
+}
+
+.popup.register button.register-btn {
+  background-color: #fa9579;
+}
+
+/* ========== ERROR / SUCCESS MESSAGES ================= */
+.popup .error {
+  color: red;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.popup .success {
+  color: green;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* ========== USER INFO (AFTER LOGIN) ========== */
+.user {
+  color: #30475e;
+  background-color: #75cfb8;
+  padding: 6px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.user a {
+  color: #30475e;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav a {
+    margin: 10px;
+  }
+
+  header .sign-in-up button {
+    margin: 8px 5px;
+  }
+}
+/* ========== HOME SECTION ========== */
+.home {
+  width: 100%;
+  min-height: 80vh; /* Take most of viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #0a94afcf, #043634);
+  color: white;
+}
+
+.home h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.home p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* Optional: Add buttons inside home section */
+.home button {
+  background-color: #fa9579;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+.home button:hover {
+  background-color: #f26e4e;
+}
+/* ========== FOOTER ========== */
+footer {
+  background-color: #043634; /* match header */
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer p {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+footer .footer-links {
+  margin-bottom: 15px;
+}
+
+footer .footer-links a {
+  color: white;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+footer .footer-links a:hover {
+  color: #fa9579;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+footer .social-icons a img {
+  width: 25px;
+  height: 25px;
+}
+
+footer .social-icons a:hover img {
+  transform: scale(1.2);
+}
