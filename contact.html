@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Student Complaint Registration System</title>
+
+  <style>
+    /* ===== GLOBAL RESET ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Poppins, sans-serif;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      background-color: #043634;
+      color: white;
+      padding: 20px;
+    }
+
+    header h2 {
+      text-align: center;
+    }
+
+    header nav a {
+      color: white;
+      margin-right: 30px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    header nav a:last-child {
+      margin-right: 0;
+    }
+
+    /* ===== CONTACT SECTION ===== */
+    .contact {
+      background-color: #f0f0f0;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .contact h1 {
+      font-size: 2.5rem;
+      color: #043634;
+      margin-bottom: 15px;
+    }
+
+    .contact p {
+      font-size: 1.05rem;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .contact-form {
+      max-width: 450px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .contact-form textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #0a94af;
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #067c8f;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background-color: #043634;
+      color: white;
+      text-align: center;
+      padding: 25px 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      header nav a {
+        margin: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h2>STUDENT COMPLAINT REGISTRATION SYSTEM</h2>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="services.html">SERVICE</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="about.html">ABOUT</a>
+    </nav>
+  </header>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact">
+    <h1>Contact Us</h1>
+    <p>If you have any questions or issues, feel free to contact us.</p>
+
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2026 Student Complaint Registration System. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
