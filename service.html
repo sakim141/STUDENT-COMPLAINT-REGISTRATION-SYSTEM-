@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Student Complaint Registration System</title>
+  <style>
+    /* ===== GLOBAL RESET ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: Poppins, sans-serif;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      background-color: #043634;
+      color: white;
+      padding: 20px;
+    }
+
+    header h2 {
+      text-align: center;
+    }
+
+    header nav a {
+      color: white;
+      margin-right: 30px;
+      font-weight: 500;
+    }
+
+    header nav a:last-child {
+      margin-right: 0;
+    }
+
+    header .sign-in-up button {
+      background-color: #0a94afcf;
+      font-size: 16px;
+      font-weight: 550;
+      padding: 6px 14px;
+      border: 2px solid #0b0b0bd8;
+      border-radius: 5px;
+      outline: none;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+
+    header .sign-in-up button:last-child {
+      background-color: #f21c08a9;
+    }
+
+    /* ===== SERVICES SECTION ===== */
+    .services {
+      padding: 60px 20px;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+
+    .services h1 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #043634;
+    }
+
+    .service-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .service-card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px 20px;
+      width: 250px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .service-card h3 {
+      color: #0a94af;
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: #333;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background-color: #043634;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    footer .footer-links a {
+      color: white;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    footer .footer-links a:hover {
+      color: #fa9579;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      header nav a {
+        margin: 10px;
+      }
+
+      header .sign-in-up button {
+        margin: 8px 5px;
+      }
+
+      .service-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h2>STUDENT COMPLAINT REGISTRATION SYSTEM</h2>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="services.html">SERVICE</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="about.html">ABOUT</a>
+    </nav>
+   
+  </header>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services">
+    <h1>Our Services</h1>
+    <div class="service-cards">
+      <div class="service-card">
+        <h3>Submit Complaint</h3>
+        <p>Students can submit their complaints online easily and securely through the system.</p>
+      </div>
+      <div class="service-card">
+        <h3>Track Complaint</h3>
+        <p>Check the status of complaints in real-time and get updates from the administration.</p>
+      </div>
+      <div class="service-card">
+        <h3>Admin Management</h3>
+        <p>The administration can review, manage, and resolve complaints efficiently.</p>
+      </div>
+      <div class="service-card">
+        <h3>Reports & Analytics</h3>
+        <p>Generate reports to track recurring issues and improve student services over time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2026 Student Complaint Registration System. All Rights Reserved.</p> 
+  </footer>
+</body>
+</html>
